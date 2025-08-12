@@ -3,8 +3,8 @@
 
 @font-face {
     font-family: "Norse-Bold";
-    src: url(/norseFont/Norse-Bold.woff2) format(woff2);
-    src: url(/norseFont/Norse-Bold.woff) format(woff);
+    src: url(norseFont/Norse-Bold.woff2) format(woff2);
+    src: url(norseFont/Norse-Bold.woff) format(woff);
 }
 
 /* ELEMENT SELECTORS */
