@@ -1,0 +1,196 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(/norseFont/Norse-Bold.woff2) format(woff2);
+    src: url(/norseFont/Norse-Bold.woff) format(woff);
+}
+
+/* ELEMENT SELECTORS */
+html,
+body {
+    min-height: 100%;
+    background-color: rgb(239, 237, 235);
+    overflow: hidden;
+}
+
+
+label {
+    margin-bottom: 5px;
+    font-family: "Montserrat";
+    color: #444445;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+input {
+    border-radius: 7px;
+    padding: 3px;
+    border: solid 2px #E5E7EB;
+}
+
+input:focus {
+    border: 1px solid #3f79ef;
+    box-shadow: 3px 3px 5px rgb(174, 174, 174);
+}
+
+input:invalid {
+    border: 2px solid rgb(199, 27, 27)
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #596D48;
+}
+
+h2 {
+    max-inline-size: 44ch;
+}
+
+footer,
+footer>a {
+    color: rgba(237, 237, 237, 0.694);
+}
+
+footer>a {
+    text-decoration: underline;
+}
+
+/* CLASS SELECTORS */
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+/* IMAGE & HERO TEXT SELECTORS */
+
+.imageContainer {
+    position: relative;
+    min-width: 25vw;
+    max-width: 25vw;
+}
+
+#grassImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#odinText {
+    position: absolute;
+    top: 27vh;
+    left: 12vw;
+    font-family: "Norse-Bold";
+    color: white;
+    font-size: max(4vw, 100%);
+}
+
+#odinLogo {
+    position: absolute;
+    width: max(4vw, 4vw);
+    top: 26vh;
+    left: 7vw;
+}
+
+#transBG {
+    position: absolute;
+    top: 25vh;
+    width: max(4vw, 100%);
+    height: max(4vw, 6vw);
+    background-color: rgba(25, 25, 25, 0.542);
+}
+
+#imgCred {
+    position: absolute;
+    top: 98vh;
+    left: 8vw;
+}
+
+.splashText {
+    margin-top: 50px;
+    padding: 2rem;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    line-height: 1.5;
+}
+
+/* FORM SELECTORS */
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0px 0px 15px 0px;
+    box-shadow: 10px 5px 5px rgb(174, 174, 174);
+    border: solid 2px rgba(174, 174, 174, 0.374);
+}
+
+.form-row {
+    display: flex;
+    margin: 7px;
+    padding-left: 25px;
+}
+
+.form-group {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group>h2 {
+    font-size: 2rem;
+    color: #2b2b2c;
+    font-weight: 600;
+}
+
+.col2 {
+    margin-left: 50px;
+}
+
+/* BUTTON & LOGIN TEXT */
+
+.createBtn {
+    font-size: 1.15rem;
+    color: rgb(255, 243, 243);
+    background-color: #596d48f1;
+    border-color: #596d4858;
+    border-radius: 10px;
+    padding: 12px 10px;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.createBtn:hover {
+    cursor: pointer;
+}
+
+.button-row {
+    display: flex;
+    margin: 10px;
+}
+
+.button-group {
+    margin-left: 30px;
+    margin-top: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#logIn {
+    margin-top: 40px;
+}
