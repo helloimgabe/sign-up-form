@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./defaultFont/Montserrat-Thin.woff2) format(woff2);
+    src: url(./defaultFont/Montserrat-Thin.woff) format(woff);
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(./norseFont/Norse-Bold.woff2) format(woff2);
+    src: url(./norseFont/Norse-Bold.woff) format(woff);
+}
+
 *,
 ::before,
 ::after {
@@ -126,19 +138,6 @@ summary {
     display: list-item;
 }
 
-
-@font-face {
-    font-family: "Montserrat";
-    src: url(./defaultFont/Montserrat-Thin.woff2) format(woff2);
-    src: url(./defaultFont/Montserrat-Thin.woff) format(woff);
-}
-
-@font-face {
-    font-family: "Norse-Bold";
-    src: url(./norseFont/Norse-Bold.woff2) format(woff2);
-    src: url(./norseFont/Norse-Bold.woff) format(woff);
-}
-
 /* ELEMENT SELECTORS */
 html,
 body {
@@ -154,9 +153,7 @@ body {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     tab-size: 4;
-    min-height: 100%;
     background-color: rgb(239, 237, 235);
-    overflow: hidden;
 }
 
 
@@ -206,7 +203,6 @@ footer>a {
 .wrapper {
     display: flex;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 .container {
